@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8427955603999394356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8427955603999394358}
+  - component: {fileID: 8427955603999394359}
+  - component: {fileID: 8427955603999394353}
+  m_Layer: 0
+  m_Name: MGHandGesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8427955603999394358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8427955603999394356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8427955603999394359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8427955603999394356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9048e1237d030400caec2aae51506882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableDebugMode: 0
+  showSkeleton: 1
+  enableCursorOnStartup: 1
+  enableSignalOnStartup: 1
+  enableGrabOnStartup: 1
+  enableRawTrackingOnStartup: 1
+  enableCursorControl: 1
+  enableSignalControl: 1
+  enableGrabControl: 1
+  enableRawTrackingControl: 1
+  handSignalCallback:
+    OnTracked:
+      m_PersistentCalls:
+        m_Calls: []
+    OnTrackedLost:
+      m_PersistentCalls:
+        m_Calls: []
+  handCursorCallback:
+    OnTracked:
+      m_PersistentCalls:
+        m_Calls: []
+    OnClicked:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMoved:
+      m_PersistentCalls:
+        m_Calls: []
+    OnTrackedLost:
+      m_PersistentCalls:
+        m_Calls: []
+  handGrabCallback:
+    OnStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMoved:
+      m_PersistentCalls:
+        m_Calls: []
+    OnEnded:
+      m_PersistentCalls:
+        m_Calls: []
+    OnCancelled:
+      m_PersistentCalls:
+        m_Calls: []
+  handTrackingCallback:
+    OnTracking:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &8427955603999394353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8427955603999394356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5d69f3046b34e7c923ec5577fafa2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableCameraOnStartup: 1
+  showCameraPreview: 1
+  ImagePreview: {fileID: 0}
